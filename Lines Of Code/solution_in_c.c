@@ -14,9 +14,9 @@ int main() {
         {
             if(drink[i]<drink[j])
             {
-                drink[i]^=drink[j];
-                drink[j]^=drink[i];
-                drink[i]^=drink[j];
+               int temp=drink[i];
+               drink[i]=drink[j];
+               drink[j]=temp;
             }
         }
     }
